@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NtoNTier</string>
+    <string name="navigation_drawer_open">打开导航</string>
+    <string name="navigation_drawer_close">关闭导航</string>
+    <string name="nav_connect">联机功能</string>
+    <string name="nav_members">在线成员</string>
+    <string name="nav_network_test">网络测试</string>
+    <string name="nav_share">文件共享</string>
+    <string name="nav_browse">文件浏览</string>
+    <string name="nav_downloads">下载管理</string>
+    <string name="nav_guide">使用指南</string>
+    <string name="nav_more">更多</string>
+</resources>

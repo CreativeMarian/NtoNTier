@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文件共享设置"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="共享端口"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etSharePort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorInput"
+            android:inputType="number"
+            android:padding="12dp"
+            android:textColor="@color/colorTextPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="共享目录"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etSharePath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorInput"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="@color/colorTextPrimary" />
+
+        <Button
+            android:id="@+id/btnStartShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="开启共享"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnStopShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="停止共享"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@color/colorInput"
+            android:padding="12dp"
+            android:text="说明：当前版本暂不支持安卓端作为 HFS 服务端。仅支持浏览和下载 Windows 端共享的文件。后续版本将集成简单 HTTP 文件服务。"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>

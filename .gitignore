@@ -1,0 +1,67 @@
+# ===== 编译产物 / 大二进制（不提交 GitHub）=====
+# NtoNTier 客户端本体（内嵌 edge/hfs/tap 引擎，约 97MB）
+dist/client/NtoNTier.exe
+dist/client/src/NtoNTier.exe
+# 引擎二进制（体积大，仓库只放源码，构建时需自行准备）
+dist/client/edge.exe
+dist/client/src/edge.exe
+dist/client/hfs.exe
+dist/client/src/hfs.exe
+dist/client/tap-windows.exe
+dist/client/src/tap-windows.exe
+# 安装包（约 291MB）
+dist/*-Setup.exe
+
+# ===== 运行期生成物 =====
+# 本地配置（含用户社区名/密钥等隐私）
+config.json
+dist/client/config.json
+dist/client/src/config.json
+# 备份 / 日志
+*.bak
+*.log
+*.err
+edge.log
+debug.log
+config-error.log
+dist/server/supernode.log.err
+# HFS 运行数据
+dist/client/*.yaml
+dist/client/data.kv
+dist/client/file-attr.kv
+dist/client/ips.kv
+dist/client/NtoNTier.exe.WebView2/
+dist/client/plugins/
+dist/client/logs/
+
+# ===== WebView2 运行时 DLL（构建时从 libs 复制）=====
+dist/client/WebView2Loader.dll
+dist/client/Microsoft.Web.WebView2.Core.dll
+dist/client/Microsoft.Web.WebView2.WinForms.dll
+
+# ===== 临时 / 测试 / 截图 =====
+frames/
+test-install/
+backup/
+downloads/
+supernode_extracted/
+n2n-bin/
+*.png
+*.wav
+
+# ===== Android 构建产物（不提交 GitHub）=====
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/.idea/
+android/captures/
+*.apk
+*.aab
+
+# ===== IDE / 系统 =====
+.vs/
+.idea/
+*.user
+Thumbs.db
+.DS_Store

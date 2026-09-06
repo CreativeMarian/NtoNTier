@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="连接状态"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="未连接"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvVirtualIp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="16dp"
+            android:background="@color/colorDivider" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supernode 地址"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etSupernode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorInput"
+            android:hint="host:port"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textColorHint="@color/colorTextHint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="社区名"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etCommunity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorInput"
+            android:hint="community"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textColorHint="@color/colorTextHint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="虚拟 IP"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etVirtualIp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorInput"
+            android:hint="10.10.10.x"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textColorHint="@color/colorTextHint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="加密 Key（可选）"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etEncryptKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorInput"
+            android:hint="encryption key"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textColorHint="@color/colorTextHint" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="子网掩码"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/etSubnetMask"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/colorInput"
+                    android:inputType="numberDecimal"
+                    android:padding="12dp"
+                    android:textColor="@color/colorTextPrimary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MTU"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/etMtu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/colorInput"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:textColor="@color/colorTextPrimary" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cbAutoConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="开机自动连接"
+            android:textColor="@color/colorTextPrimary" />
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="连接"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>
